@@ -53,7 +53,7 @@ End Sub
 
 Sub Dodavky_aktualizuj()
 On Error GoTo konec
-Set b = Workbooks("Evidence laboratorn�ch materi�l�").Sheets("Objedn�vky")
+Set b = Workbooks("Evidence laboratorních materiálů").Sheets("Objednávky")
 rb = b.UsedRange.Rows.Count
 
 With uf_Objednavky
@@ -77,8 +77,8 @@ Sub TiskID()
 'Pro přípda, že budu chtít tisknout ID štítky
 
 On Error GoTo konec
-sablona = "C:\Programov�n�\VBA\Manager chemik�li�\�ablony\St�tek_ID.xltm"
-Set a = Workbooks("Evidence laboratorn�ch materi�l�").Sheets("Skladov� evidence")
+sablona = "C:\Programování\VBA\Manager chemikálie\šablony\Stítek_ID.xltm"
+Set a = Workbooks("Evidence laboratorních materiálů").Sheets("Skladová evidence")
 ra = a.UsedRange.Rows.Count
 
 With uf_ObjednavkyPrijem
