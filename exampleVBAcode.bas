@@ -210,7 +210,7 @@ If .cmb_jednotka = "" Then
 End If
 
 
-'P�id� materi�l do evidence
+'Přidá materiál do evidence
 pocet = .lb_davka.ListCount - 1
 For j = 0 To pocet
 
@@ -320,7 +320,7 @@ If .cmb_jednotka = "" Then
 End If
 
 
-'P�id� materi�l do evidence
+'Přidá materiál do evidence
 pocet = .lb_davka.ListCount - 1
 For j = 0 To pocet
 
@@ -370,7 +370,7 @@ End With
 End Sub
 
 Sub TiskStitku()
-'Nefunk�n�
+'Nefunkční
 Set a = Workbooks("AMApplikace.xlsm").Sheets("Komponenty")
 ra = a.UsedRange.Rows.Count
 Set b = Workbooks("Evidence laboratorních materiálů").Sheets("Skladová evidence")
@@ -399,7 +399,7 @@ End Sub
 
 Sub KdoJeKdo()
 kdo = Application.UserName
-Set a = Workbooks("LabFinder.xlsm").Sheets("Jm�na")
+Set a = Workbooks("LabFinder.xlsm").Sheets("Jména")
 ra = a.UsedRange.Rows.Count
 
 For i = 1 To ra
