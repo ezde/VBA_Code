@@ -37,7 +37,7 @@ With uf_Objednavky
     .lb_seznamobj.ColumnCount = 6
 
 For i = 2 To rb
-    If b.Cells(i, 3) = "�ek� na vy��zen�" Then
+    If b.Cells(i, 3) = "Čeká na vyřízení" Then
         .lb_seznamobj.AddItem b.Cells(i, 1)
         .lb_seznamobj.List(.lb_seznamobj.ListCount - 1, 1) = b.Cells(i, 2)
         .lb_seznamobj.List(.lb_seznamobj.ListCount - 1, 2) = b.Cells(i, 3)
@@ -61,7 +61,7 @@ With uf_Objednavky
     .lbox_Objednavky.ColumnCount = 3
 
 For i = 2 To rb
-    If b.Cells(i, 3) = "Objedn�no" Then
+    If b.Cells(i, 3) = "Objednáno" Then
         .lbox_Objednavky.AddItem b.Cells(i, 1)
         .lbox_Objednavky.List(.lbox_Objednavky.ListCount - 1, 1) = b.Cells(i, 2)
         .lbox_Objednavky.List(.lbox_Objednavky.ListCount - 1, 2) = b.Cells(i, 7)
